@@ -1,4 +1,4 @@
-package br.com.alura.rh.model;
+package br.com.jackson.rh.model;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
