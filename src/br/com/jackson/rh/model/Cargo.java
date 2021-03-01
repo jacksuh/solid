@@ -1,31 +1,32 @@
-package br.com.jackson.rh.model;
+package br.com.alura.rh.model;
 
 public enum Cargo {
 
-	ASSISTENTE{
+	ASSISTENTE {
 		@Override
-		public Cargo getProximoCargo(){
+		public Cargo getProximoCargo() {
 			return ANALISTA;
 		}
 	},
-	ANALISTA{
-	@Override
-	public Cargo getProximoCargo(){
-		return ESPECIALISTA;
-	}
-	},
-	ESPECIALISTA{
+	ANALISTA {
 		@Override
-		public Cargo getProximoCargo(){
-				return GERENTE;
+		public Cargo getProximoCargo() {
+			return ESPECIALISTA;
 		}
-				},
-		GERENTE{
+	},
+	ESPECIALISTA {
 		@Override
-		public Cargo getProximoCargo(){
-				return GERENTE;
-				}
-				};
+		public Cargo getProximoCargo() {
+			return GERENTE;
+		}
+	},
+	GERENTE {
+		@Override
+		public Cargo getProximoCargo() {
+			return GERENTE;
+		}
+	};
 
 	public abstract Cargo getProximoCargo();
+
 }
